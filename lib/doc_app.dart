@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:app_pro/theming/coloers.dart';
 import 'package:app_pro/routing/routes.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:app_pro/routing/app_routing.dart';
+import 'package:app_pro/routing/app_routing.dart';
 
 class DocApp extends StatelessWidget {
   final AppRouting appRouting;
@@ -21,7 +21,7 @@ class DocApp extends StatelessWidget {
             primaryColor: ColoersManger.mainBlue,
             scaffoldBackgroundColor: const Color(0xFFEDF2FA),
           ),
-          // debugShowCheckedModeBanner: false,
+          debugShowCheckedModeBanner: false,
           initialRoute: Routes.onboardingScreen,
           onGenerateRoute: appRouting.generateRoute,
         )
